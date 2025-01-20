@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi AI Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="ui-container">
+        <!-- Top Left Info -->
+        <div class="top-left-info">
+            <div id="clock">--:--:--</div>
+            <div id="weather">Fetching weather...</div>
+        </div>
+
+        <!-- Central Holographic Display -->
+        <div class="holo-display">
+            <div class="holo-core">
+                <img src="image.png" alt="AI Core" class="rotating-image">
+            </div>
+            <div class="holo-ring"></div>
+        </div>
+
+        <!-- Animated Background Canvas -->
+        <canvas id="matrixCanvas"></canvas>
+
+        <!-- Control Panel Buttons -->
+        <div class="control-panel">
+            <button class="neon-button" id="btn-home">Home</button>
+            <button class="neon-button" id="btn-docs">Documents</button>
+            <button class="neon-button" id="btn-ai-mode">AI Mode</button>
+            <button class="neon-button" id="btn-logout">Logout</button>
+        </div>
+
+        <!-- Terminal Section (Hidden by Default) -->
+        <div class="terminal" id="terminal" style="display: none;">
+            <div class="terminal-output" id="terminal-output"></div>
+            <input type="text" class="terminal-input" id="terminal-input" placeholder="Type a command..." />
+        </div>
+
+        <!-- Microphone Visualization Section -->
+        <div class="microphone-visualizer" id="microphone-visualizer">
+            <canvas id="microphoneCanvas"></canvas>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
